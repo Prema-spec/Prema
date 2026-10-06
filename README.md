@@ -26,6 +26,10 @@ npm run preview
 
 Run the focused validation tests with `npm test`.
 
+## GitHub Pages deployment
+
+The GitHub Actions workflow at `.github/workflows/deploy-pages.yml` builds the app and deploys `dist/` on pushes to `main` (or when run manually). In the repository's **Settings → Pages**, set the build and deployment source to **GitHub Actions**. The Vite base path is `/Prema/`, matching the project Pages URL.
+
 ## Main features
 
 - Loads and validates tender information and ordered document requirements from a user-selected `requirements.json`.
